@@ -52,7 +52,33 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
    <div id="page-banner">
         	<img src="https://1.bp.blogspot.com/--IOL4k64xi8/XzY8wwxQFcI/AAAAAAAAAAY/YVMf5a1Jl7cJ7ry70xeIk5NB0TA2kC6QgCNcBGAsYHQ/s1334/FREEDOM%2BINDEX.jpg" border="0" WIDTH="915" HEIGHT="162"></a>
         </div>
-        <h2>DESTAQUES DO DIA</h2>
+        <h2><div id="clockbox"></div></h2>
+
+<script type="text/javascript">
+var tday=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+var tmonth=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" - "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
         <p><img src="https://fotos.jornaldacidadeonline.com.br/uploads/fotos/1603483263_5f93367f74af4.jpeg"><b>Kakay é deletado por propina em Goiás em parceria com o 'tucano' Marconi Perillo</b></a></li>
 		
 		<hr>
