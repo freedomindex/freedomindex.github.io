@@ -52,12 +52,38 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
    <div id="page-banner">
         	<img src="https://1.bp.blogspot.com/--IOL4k64xi8/XzY8wwxQFcI/AAAAAAAAAAY/YVMf5a1Jl7cJ7ry70xeIk5NB0TA2kC6QgCNcBGAsYHQ/s1334/FREEDOM%2BINDEX.jpg" border="0" WIDTH="915" HEIGHT="162"></a>
         </div>
-        <h2>DESTAQUES DO DIA 23 DE OUTUBRO DE 2020</h2>
-        <p><img src="https://fotos.jornaldacidadeonline.com.br/uploads/fotos/1603483263_5f93367f74af4.jpeg"><b>Kakay é deletado por propina em Goiás em parceria com o 'tucano' Marconi Perillo</b></a></li>
+        <h2><div id="clockbox"></div></h2>
+
+<script type="text/javascript">
+var tday=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
+var tmonth=["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+ndate+" de "+tmonth[nmonth]+" de "+nyear+" - "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+        <p><img src="https://gazetabrasil.com.br/wp-content/uploads/2020/07/carlos-moises_5-696x435.jpg"><b>Em Santa Catarina, Carlos Moisés é afastado e vice bolsonarista, Daniela Reinehr, assume</b></a></li>
 		
 		<hr>
 
-		<p><img src="https://fotos.jornaldacidadeonline.com.br/uploads/fotos/1601595876_5f7669e45b4e4.jpeg"><b>Bolsonaro confirma Kassio Nunes no STF</b></a></li>
+		<p><img src="https://wearethene.ws/assets/images/l0/11/1b/111b2c86078ff44e00f044b3b1318b751801a63a6bae49f1f4a3f51334e50a6b.png"><b>O presidente da Polônia, Andrzej Duda, testou positivo para coronavírus</b></a></li>
 		
 		<hr>
 		
@@ -69,9 +95,13 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
 	<h3>COLUNA BRASILEIRA</h3>
 	
 		<ul>
-		  <li><a href="https://www.jornaldacidadeonline.com.br/noticias/24044/kakay-e-delatado-por-propina-em-goias-em-parceria-com-o-tucano-marconi-perillo.amp"target="_blank" style="color:#006400;"class="headline-link">Kakay é deletado por propina em Goiás em parceria com o 'tucano' Marconi Perillo</a></li>
-			<li><a href="https://www.tercalivre.com.br/bolsonaro-nomeia-kassio-nunes-marques-como-ministro-do-stf/"target="_blank" style="color:#ff0000;" class="headline-link">Bolsonaro nomeia Kassio Nunes Marques como ministro do STF</a></li>
-      <li><a href="https://gazetabrasil.com.br/especiais/jair-bolsonaro/pgr-arquiva-representacao-contra-bolsonaro-por-suposta-ameaca-ao-stf-por-participar-de-manifestacao/amp/"target="_blank">PGR arquiva representação contra Bolsonaro por suposta “ameaça ao STF” por participar de manifestação</a></li>
+			<li><a href="https://www.jornaldacidadeonline.com.br/noticias/24052/santa-catarina-vive-uma-noite-historica"target="_blank" style="color:#006400;"class="headline-link">Governador de Santa Catarina é afastado!!!</a></li>
+		  <li><a href="https://www.jornaldacidadeonline.com.br/noticias/24044/kakay-e-delatado-por-propina-em-goias-em-parceria-com-o-tucano-marconi-perillo.amp"target="_blank" style="color:#ff0000;"class="headline-link">Kakay é deletado por propina em Goiás em parceria com o 'tucano' Marconi Perillo</a></li>
+		  <li><a href="https://jovempan.com.br/opiniao-jovem-pan/comentaristas/j-r-guzzo/lockdown-e-puro-panico-de-manada-por-parte-de-governantes-que-nao-sabem-o-que-fazer.html"target="_blank">Lockdown é puro pânico de manada por parte de governantes que não sabem o que fazer</a></li>
+		  <li><a href="https://www.jornaldacidadeonline.com.br/noticias/24050/lula-e-tetra-na-lava-jato"target="_blank">Lula é “tetra” na Lava Jato</a></li>
+			<li><a href="https://www.jornaldacidadeonline.com.br/noticias/24046/chefe-do-trafico-na-regiao-serrana-do-rio-e-preso-em-hotel-de-luxo-de-salvador"target="_blank" style="color:#ff0000;" class="headline-link">Chefe do tráfico na Região Serrana do Rio é preso em hotel de luxo de Salvador
+			</a></li>
+      
 			<li><a href="https://www.jornaldacidadeonline.com.br/noticias/24031/heleno-expoe-miriam-leitao-acusacoes-infundadas-obcecada-por-falar-mal-do-governo-e-destilar-seu-odio"target="_blank">Heleno expõe Miriam Leitão: “Acusações infundadas, obcecada por falar mal do governo e destilar seu ódio”</a></li>
 			<li><a href="https://renovamidia.com.br/tcu-e-parceiro-do-ministerio-da-infraestrutura-diz-bolsonaro/"target="_blank">TCU é parceiro do Ministério da Infraestrutura, diz Bolsonaro</a></li>
 			<li><a href="https://revistaoeste.com/bolsonaro-vacina-obrigatoria-e-coisa-de-aprendizes-de-ditadores/?utm_source=rss&utm_medium=rss&utm_campaign=bolsonaro-vacina-obrigatoria-e-coisa-de-aprendizes-de-ditadores"target="_blank">Bolsonaro: Vacina obrigatória é coisa de ‘aprendizes de ditadores’</a></li>
@@ -84,7 +114,7 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
 			<li><a href="https://exatanews.com.br/-nao-ha-tolerancia-para-corrupcao-no-governo-diz-tarcisio-716394"style="color:#ff0000;" class="headline-link">‘Não há tolerância para corrupção no governo’, diz Tarcísio</a></li>
 			<li><a href="https://www.jornaldacidadeonline.com.br/noticias/24026/clima-esquenta-e-datena-desmoraliza-doria-ao-vivo-o-senhor-tambem-nao-e-medico-veja-o-video"target="_blank">Clima esquenta e Datena desmoraliza Doria “ao vivo”: “O senhor também não é médico”</a></li>
 			<hr>
-			Última atualização em 23/10/2020 às 19:40 (BRT).
+			Última atualização em 24/10/2020 às 10:40 (BRT).
 
         </ul>
         
@@ -95,9 +125,12 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
 	<h3>COLUNA AMERICANA</h3>
 	
         <ul>
-      <li><a href="https://www.politico.com/news/2020/10/23/judge-orders-justice-department-to-verify-its-filings-in-flynn-case-431600"target="_blank" style="color:#006400;" class="headline-link">Juiz Federal ordena que o Departamento de Justiça verifique seus registros no caso Flynn</a></li>
-     <li><a href="https://kerrypicket.com/trump-tells-biden-i-ran-for-president-because-you-did-a-poor-job/"target="_blank">Trump diz a Biden: "Concorri" à presidência "Porque você fez um trabalho ruim"</a></li>
-			<li><a href="https://www.bbc.com/news/world-africa-54554286"target="_blank" style="color:#ff0000;" class="headline-link">Trump anuncia acordo histórico entre Sudão e Israel</a></li>
+	  <li><a href="https://www.politico.com/news/2020/10/23/judge-orders-justice-department-to-verify-its-filings-in-flynn-case-431600"target="_blank" style="color:#006400;" class="headline-link">Juiz Federal ordena que o Departamento de Justiça verifique seus registros no caso Flynn</a></li>
+	<li><a href="https://www.youtube.com/watch?v=UlgGgCLhzY0&feature=emb_title"target="_blank">Vídeo de Joe Biden chegando a China com seu filho, em 2013, ressurge</a></li>
+	 <li><a href="https://www.gnews.org/444046/"target="_blank">O Acordo de Empréstimo assinado por Hunter Biden para obter financiamento para a participação acionária de 10% em empresa chinesa</a></li>
+	 <li><a href="https://kerrypicket.com/trump-tells-biden-i-ran-for-president-because-you-did-a-poor-job/"target="_blank">Trump diz a Biden: "Concorri" à presidência "Porque você fez um trabalho ruim"</a></li>
+	 <li><a href="https://www.gnews.org/444046/"target="_blank">O Acordo de Empréstimo assinado por Hunter Biden para obter financiamento para a participação acionária de 10% em empresa chinesa</a></li>
+	<li><a href="https://www.bbc.com/news/world-africa-54554286"target="_blank" style="color:#ff0000;" class="headline-link">Trump anuncia acordo histórico entre Sudão e Israel</a></li>
        <li><a href="https://kerrypicket.com/trump-tells-biden-i-ran-for-president-because-you-did-a-poor-job/"target="_blank">Trump diz a Biden: "Concorri" à presidência "Porque você fez um trabalho ruim"</a></li>
 			<li><a href="https://twitter.com/CHIZMAGA/status/1319438519048261633?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1319438519048261633%7Ctwgr%5Eshare_3%2Ccontainerclick_1&ref_url=https%3A%2F%2Fwww.citizenfreepress.com%2Fbreaking%2Ftrump-motorcade-leaving-nashville%2F"target="_blank" style="color:#ff0000;" class="headline-link">Carreata presidencial saindo de Nashville</a></li>
 			<li><a href="https://www.zerohedge.com/geopolitical/blockbuster-report-reveals-how-biden-family-was-compromised-china"target="_blank" style="color:#ff0000;" class="headline-link">Relatório Blockbuster revela como a família Biden foi comprometida pela China</a></li>
@@ -115,7 +148,7 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
 			<li><a href="https://www.zerohedge.com/political/radiation-sniffer-helicopter-deployed-above-washington-dc"target="_blank" style="color:#ff0000;" class="headline-link">Helicóptero 'farejador' de radiação voa sobre Washington, DC</a>
 			<p></p></li>
 			<hr>
-			Última atualização em 23/10/2020 às 20:51 (BRT).
+			Última atualização em 23/10/2020 às 11:34 (BRT).
         </ul>
 
     </div>
@@ -123,21 +156,22 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
     <div id="right-column">
     
 	 <h3>INTERNACIONAL, MILITAR & GEOPOLÍTICA</h3>
-	 
-    	<ul> 
+
+	 		<ul>
+			<li><a href="https://www.nbcnews.com/news/world/poland-s-president-andrzej-duda-tests-positive-coronavirus-n1244622"target="_blank" style="color:#006400;" class="headline-link">O presidente da Polônia, Andrzej Duda, testou positivo para coronavírus</a></li>
 			<li><a href="https://revistaoeste.com/vaticano-renova-acordo-com-o-partido-comunista-da-china/?utm_source=rss&utm_medium=rss&utm_campaign=vaticano-renova-acordo-com-o-partido-comunista-da-china"target="_blank" style="color:#ff0000;" class="headline-link">Vaticano renova acordo com o Partido Comunista da China</a></li>
 		    <li><a href="https://jornalveracruz.com.br/uber-eats-nao-vai-mais-atuar-na-argentina/"target="_blank">Uber Eats não vai mais atuar na Ar­gen­tina</a></li>
 			<li><a href="https://geopolitics.news/analytics/turkey-leads-new-atrocities-against-armenians/">A Turquia lidera novas atrocidades contra os armênios</a>
 			<img src="https://geopolitics.news/wp-content/uploads/2020/09/geopolitics-00688-696x392.jpg"target="_blank" width=200></a>
 			<li><a href="https://geopolitics.news/middle-east/mufti-of-damascus-killed-in-targeted-assassination/"target="_blank">Sheikh Mohammad Adnan Afiouni, foi morto na quinta-feira depois que uma bomba foi detonada ao longo de uma estrada na zona rural de Damasco</a></li>
 			<li><a href="https://twitter.com/SputnikInt/status/1319523951287037952"target="_blank">EUA e Índia finalizam pacto de compartilhamento de dados militares antes da visita a Pompeo - Departamento de Estado</a></li>
-       <li><a href="https://www.libertynation.com/bolivias-march-toward-socialism/"target="_blank" style="color:##dd9933;" class="headline-link">Marcha da Bolívia em direção ao socialismo?</a></li>		
+            <li><a href="https://www.libertynation.com/bolivias-march-toward-socialism/"target="_blank" style="color:##dd9933;" class="headline-link">Marcha da Bolívia em direção ao socialismo?</a></li>		
 			<li><a href="https://www.foxnews.com/us/us-seizes-domain-names-linked-to-iran-backed-militia-group"target="_blank">EUA apreendem nomes de domínio ligados a grupo de milícia apoiado pelo Irã</a></li>
 			<li><a href="https://americanmilitarynews.com/2020/10/poisoned-putin-critic-navalny-publicly-blames-putin-for-trying-to-kill-him/"target="_blank">Crítico de Putin que foi envenenado, culpa Putin publicamente por tentar matá-lo</a></li>
-			<li><a href="https://revistaoeste.com/huawei-x-google-chinesa-anuncia-servicos-de-buscas-e-mapas/?utm_source=rss&utm_medium=rss&utm_campaign=huawei-x-google-chinesa-anuncia-servicos-de-buscas-e-mapas"target="_blank">Huawei X Google: Chinesa anuncia serviços de buscas e mapas</a></li>
+			<li><a href="https://geopolitics.co/2020/09/30/trump-admin-poised-to-gift-israel-11-billion-in-bid-to-secure-another-arab-israeli-peace-treaty/"target="_blank">Trump irá doar US $ 11 bilhões a Israel para garantir outro tratado de “paz” árabe-israelense</a></li>
 			<li><a href="https://www.navytimes.com/news/your-navy/2020/10/01/navy-conducts-freedom-of-navigation-operations-off-venezuelan-coast/"target="_blank">Marinhna Americana realiza operações na costa venezuelana</a></li>
 			<hr>
-			Última atualização em 23/10/2020 às 12:34 (BRT).
+			Última atualização em 23/10/2020 às 10:50 (BRT).
 		</ul>
 		
 	<h3>FERRAMENTAS</l>
@@ -193,8 +227,4 @@ body {font-size: 85%; font-family: Arial, Helvetica, sans-serif; line-height: 1;
     </div>
     
 </body>
-</html>
-
-
-
-
+</html
